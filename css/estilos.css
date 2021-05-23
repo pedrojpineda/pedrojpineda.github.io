@@ -67,8 +67,9 @@ main {
   .boton:hover {
     background-color: #00386c;
     color: white; }
-  .boton i {
-    margin-right: 10px; }
+
+i {
+  margin-right: 10px; }
 
 /* HEADER */
 header {
@@ -179,7 +180,8 @@ article, .producto {
     background-color: white;
     padding: 20px 20px 20px 40px; }
   .beneficios i {
-    font-size: 50px; }
+    font-size: 50px;
+    margin-right: 0; }
 
 /* PÁGINA DE PRODUCTO */
 .producto {
