@@ -21,8 +21,8 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-md navbar-light bg-transparent">
-            <div class="container">
+        <div class="container">
+            <nav class="navbar navbar-expand-md navbar-light bg-transparent">
                 <a class="navbar-brand logo" href="index.html"><img class="img-fluid" src="imagenes/logo.png"
                         alt="Logo de Beauty Store" title="Logo de Beauty Store"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -40,59 +40,86 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="categorias/belleza-cuidado-piel.html">Belleza y
-                                        Cuidado de la
-                                        Piel</a></li>
+                                        Cuidado de la Piel</a></li>
                                 <li><a class="dropdown-item" href="categorias/nutricion.html">Nutrición</a></li>
                                 <li><a class="dropdown-item" href="categorias/medicamentos.html">Medicamentos</a></li>
                             </ul>
                         </li>
                         <li class="nav-item"><a href="blog.html">Blog</a></li>
                         <li class="nav-item"><a class="active" href="carrito.html">Carrito</a></li>
+                        <li class="nav-item i-buscar">
+                            <a data-bs-toggle="collapse" href="#buscador" role="button" aria-expanded="false"
+                                aria-controls="collapseExample">
+                                <i class="fas fa-search"></i>
+                            </a>
+                        </li>
                     </ul>
                 </div>
+            </nav>
+            <div class="row">
+                <div class="col-lg-6 offset-lg-6 col-md-8 offset-md-4">
+                    <div class="collapse" id="buscador">
+                        <div class="d-grid gap-2 d-flex buscador">
+                            <input type="text" class="form-control" aria-label="buscador"
+                                placeholder="Escribe el producto">
+                            <a class="boton" href="#">Buscar</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </nav>
+        </div>
     </header>
 
     <main>
         <h1>Carrito</h1>
         <section class="container-lg">
             <div class="carrito table-responsive">
-                <table class="table">
+                <table class="table text-center">
                     <tr>
                         <th>Imagen</th>
-                        <th class="producto">Producto</th>
+                        <th class="producto-carrito">Producto</th>
                         <th>Cantidad</th>
                         <th>Precio</th>
                     </tr>
                     <tr>
-                        <td><img src="imagenes/nutricion/carnichofa.jpg" alt="Foto de carnichofa"></td>
-                        <td class="producto">
-                            <h2 class="h3"><a href="categorias/nutricion/carnichofa.html">Carnichofa</a></h2>
-                        </td>
-                        <td>1</td>
-                        <td>$ 56.100 COP</td>
-                    </tr>
-                    <tr>
-                        <td><img src="imagenes/belleza/crema-nutritiva.jpg" alt="Foto de crema nutritiva"></td>
-                        <td class="producto">
-                            <h2 class="h3"><a href="categorias/belleza-cuidado-piel/crema-nutritiva.html">Crema nutritiva</a></h2>
+                        <td><img src="imagenes/belleza/crema-nutritiva-plus-50-1.jpg"
+                                alt="Foto de crema nutritiva plus 50" title="Foto de crema nutritiva plus 50"></td>
+                        <td class="producto-carrito">
+                            <h2 class="h3"><a
+                                    href="../categorias/belleza-cuidado-piel/crema-nutritiva-plus-50.html">Crema
+                                    nutritiva Plus 50</a></h2>
                         </td>
                         <td>1</td>
                         <td>$ 35.700 COP</td>
                     </tr>
                     <tr>
-                        <td><img src="imagenes/medicamentos/complejo-b.jpg" alt="Foto de Complejo-B"></td>
-                        <td class="producto">
-                            <h2 class="h3"><a href="categorias/medicamentos/complejo-b.html">Complejo-B</a></h2>
+                        <td><img src="imagenes/nutricion/carnichofa.jpg" alt="Foto de carnichofa"
+                                title="Foto de carnichofa"></td>
+                        <td class="product-carrito">
+                            <h2 class="h3"><a
+                                    href="../categorias/belleza-cuidado-piel/crema-nutritiva-plus-50.html">Carnichofa</a>
+                            </h2>
+                        </td>
+                        <td>1</td>
+                        <td>$ 56.100 COP</td>
+                    </tr>
+                    <tr>
+                        <td><img src="imagenes/medicamentos/complejo-b.jpg" alt="Foto de Complejo-B"
+                                title="Foto de Complejo-B"></td>
+                        <td class="producto-carrito">
+                            <h2 class="h3"><a
+                                    href="../categorias/belleza-cuidado-piel/crema-nutritiva-plus-50.html">Complejo-B</a>
+                            </h2>
                         </td>
                         <td>1</td>
                         <td>$ 16.200 COP</td>
                     </tr>
                     <tr>
                         <td></td>
-                        <td class="producto"></td>
-                        <td><h3>Subtotal</h3></td>
+                        <td class="producto-carrito"></td>
+                        <td>
+                            <h3>Subtotal</h3>
+                        </td>
                         <td>$ 108.000 COP</td>
                     </tr>
                 </table>
@@ -133,10 +160,10 @@
                             </select>
                             <input type="number" id="telefono" name="telefono" placeholder="No. de teléfono">
                             <textarea id="mensaje" name="mensaje" cols="30" rows="5" placeholder="Mensaje"></textarea>
+                            <input class="checkbox" type="checkbox" id="datos" name="datos">
                             <label for="datos">¿Aceptas el tratamiento de tus datos personales?</label>
                             <input class="checkbox" type="checkbox" id="datos" name="datos">
                             <div class="flex">
-                                <input class="boton" type="reset" value="Limpiar formulario">
                                 <input class="boton" type="submit" value="Enviar">
                             </div>
                         </form>

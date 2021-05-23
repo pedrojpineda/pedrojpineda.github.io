@@ -21,8 +21,8 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-md navbar-light bg-transparent">
-            <div class="container">
+        <div class="container">
+            <nav class="navbar navbar-expand-md navbar-light bg-transparent">
                 <a class="navbar-brand logo" href="../index.html"><img class="img-fluid" src="../imagenes/logo.png"
                         alt="Logo de Beauty Store" title="Logo de Beauty Store"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -40,30 +40,64 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item active" href="belleza-cuidado-piel.html">Belleza y Cuidado
-                                        de la
-                                        Piel</a></li>
+                                        de la Piel</a></li>
                                 <li><a class="dropdown-item" href="nutricion.html">Nutrición</a></li>
                                 <li><a class="dropdown-item" href="medicamentos.html">Medicamentos</a></li>
                             </ul>
                         </li>
                         <li class="nav-item"><a href="../blog.html">Blog</a></li>
                         <li class="nav-item"><a href="../carrito.html">Carrito</a></li>
+                        <li class="nav-item i-buscar">
+                            <a data-bs-toggle="collapse" href="#buscador" role="button" aria-expanded="false"
+                                aria-controls="collapseExample">
+                                <i class="fas fa-search"></i>
+                            </a>
+                        </li>
                     </ul>
                 </div>
+            </nav>
+            <div class="row">
+                <div class="col-lg-6 offset-lg-6 col-md-8 offset-md-4">
+                    <div class="collapse" id="buscador">
+                        <div class="d-grid gap-2 d-flex buscador">
+                            <input type="text" class="form-control" aria-label="buscador"
+                                placeholder="Escribe el producto">
+                            <a class="boton" href="#">Buscar</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </nav>
+        </div>
     </header>
 
     <main>
         <h1>Belleza y Cuidado de la Piel</h1>
-        <section>
+        <section class="categoria-productos">
             <div class="container">
                 <div class="row flex">
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <article>
-                            <img class="img-fluid" src="../imagenes/belleza/agua-de-rosas.jpg"
-                                alt="Foto de agua de rosas" title="Foto de agua de rosas">
-                            <h2 class="h3"><a href="belleza-cuidado-piel/agua-de-rosas.html">Agua de
+                            <a href="../categorias/belleza-cuidado-piel/crema-nutritiva-plus-50.html"><img
+                                    class="img-fluid" src="../imagenes/belleza/crema-nutritiva-plus-50-1.jpg"
+                                    alt="Foto de crema nutritiva plus 50" title="Foto de crema nutritiva plus 50"></a>
+                            <h2 class="h3"><a
+                                    href="../categorias/belleza-cuidado-piel/crema-nutritiva-plus-50.html">Crema
+                                    Nutritiva Plus 50</a></h2>
+                            <p>Fórmula especialmente indicada para pieles maduras. Enriquecida con extractos de Flor de
+                                Durazno y Vitamina E, componentes que ayudan a regenerar y renovar la piel.</p>
+                            <span class="precio">$ 35.700 COP (Oferta)</span>
+                            <span class="tachado">$ 45.000 COP (Normal)</span>
+                            <a class="boton" href="../carrito.html"><i class="fas fa-cart-plus"></i>Agregar al
+                                carrito</a>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <article>
+                            <a href="../categorias/belleza-cuidado-piel/crema-nutritiva-plus-50.html"><img
+                                    class="img-fluid" src="../imagenes/belleza/agua-de-rosas.jpg"
+                                    alt="Foto de agua de rosas" title="Foto de agua de rosas"></a>
+                            <h2 class="h3"><a
+                                    href="../categorias/belleza-cuidado-piel/crema-nutritiva-plus-50.html">Agua de
                                     rosas</a>
                             </h2>
                             <p>El Agua de rosas tiene múltiple beneficios como hidratar la piel cerrar poros abiertos y
@@ -71,80 +105,77 @@
                                 maquillaje.</p>
                             <span class="precio">$ 4.000 COP (Oferta)</span>
                             <span class="tachado">$ 5.900 COP (Normal)</span>
-                            <a class="boton" href="../carrito.html">Agregar al carrito</a>
+                            <a class="boton" href="../carrito.html"><i class="fas fa-cart-plus"></i>Agregar al
+                                carrito</a>
                         </article>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <article>
-                            <img class="img-fluid" src="../imagenes/belleza/exfoliante-facial.jpg"
-                                alt="Foto de exfoliante facial" title="Foto de exfoliante facial">
-                            <h2 class="h3"><a href="belleza-cuidado-piel/exfoliante-facial.html">Exfoliante
+                            <a href="../categorias/belleza-cuidado-piel/crema-nutritiva-plus-50.html"><img
+                                    class="img-fluid" src="../imagenes/belleza/exfoliante-facial.jpg"
+                                    alt="Foto de exfoliante facial" title="Foto de exfoliante facial"></a>
+                            <h2 class="h3"><a
+                                    href="../categorias/belleza-cuidado-piel/crema-nutritiva-plus-50.html">Exfoliante
                                     facial</a>
                             </h2>
                             <p>Diseñado especialmente para tener la piel suave, limpia de células muertas e impurezas
                                 gracias a las partículas exfoliantes que contiene. Efecto soft-peeling.</p>
                             <span class="precio">$ 21.900 COP (Oferta)</span>
                             <span class="tachado">$ 25.900 COP (Normal)</span>
-                            <a class="boton" href="../carrito.html">Agregar al carrito</a>
+                            <a class="boton" href="../carrito.html"><i class="fas fa-cart-plus"></i>Agregar al
+                                carrito</a>
                         </article>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <article>
-                            <img class="img-fluid" src="../imagenes/belleza/crema-nutritiva.jpg"
-                                alt="Foto de crema nutritiva" title="Foto de crema nutritiva">
-                            <h2 class="h3"><a href="belleza-cuidado-piel/crema-nutritiva.html">Crema
-                                    nutritiva</a></h2>
-                            <p>Especialmente indicada para pieles grasas a mixtas, elaborada con extracto natural de
-                                pepino, vitamina E, filtro solar UVA – UVB y activos astringentes y matificantes.</p>
-                            <span class="precio">$ 35.700 COP (Oferta)</span>
-                            <span class="tachado">$ 45.000 COP (Normal)</span>
-                            <a class="boton" href="../carrito.html">Agregar al carrito</a>
-                        </article>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <article>
-                            <img class="img-fluid" src="../imagenes/belleza/crema-despigmentante.png"
-                                alt="Foto de crema despigmentante" title="Foto de crema despigmentante">
-                            <h2 class="h3"><a href="belleza-cuidado-piel/crema-despigmentante.html">Crema
+                            <a href="../categorias/belleza-cuidado-piel/crema-nutritiva-plus-50.html"><img
+                                    class="img-fluid" src="../imagenes/belleza/crema-despigmentante.png"
+                                    alt="Foto de crema despigmentante" title="Foto de crema despigmentante"></a>
+                            <h2 class="h3"><a
+                                    href="../categorias/belleza-cuidado-piel/crema-nutritiva-plus-50.html">Crema
                                     despigmentante</a></h2>
                             <p>Formulación avanzada con tres activos despigmentantes de origen natural que trabajan
-                                sinérgicamente
-                                evitando la formación excesiva de melanina y de manchas. </p>
+                                sinérgicamente evitando la formación excesiva de melanina y de manchas. </p>
                             <span class="precio">$ 47.200 COP (Oferta)</span>
                             <span class="tachado">$ 45.900 COP (Normal)</span>
-                            <a class="boton" href="../carrito.html">Agregar al carrito</a>
+                            <a class="boton" href="../carrito.html"><i class="fas fa-cart-plus"></i>Agregar al
+                                carrito</a>
                         </article>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <article>
-                            <img class="img-fluid" src="../imagenes/belleza/jabon-de-hiel-y-lanolina.png"
-                                alt="Foto de Jabón Facial de Hiel y Lanolina"
-                                title="Foto de Jabón Facial de Hiel y Lanolina">
-                            <h2 class="h3"><a href="belleza-cuidado-piel/jabon-de-hiel-y-lanolina.html">Jabón
+                            <a href="../categorias/belleza-cuidado-piel/crema-nutritiva-plus-50.html"><img
+                                    class="img-fluid" src="../imagenes/belleza/jabon-de-hiel-y-lanolina.png"
+                                    alt="Foto de Jabón Facial de Hiel y Lanolina"
+                                    title="Foto de Jabón Facial de Hiel y Lanolina"></a>
+                            <h2 class="h3"><a
+                                    href="../categorias/belleza-cuidado-piel/crema-nutritiva-plus-50.html">Jabón
                                     Facial de Hiel y Lanolina</a>
                             </h2>
                             <p>Nuestro Jabón Facial de Hiel y Lanolina limpia, retira impurezas y células muertas de la
-                                piel,
-                                brindando un alto poder humectante. Por su suave formulación, no reseca la piel.</p>
+                                piel, brindando un alto poder humectante. Por su suave formulación, no reseca la piel.</p>
                             <span class="precio">$ 7.900 COP (Oferta)</span>
                             <span class="tachado">$ 10.500 COP (Normal)</span>
-                            <a class="boton" href="../carrito.html">Agregar al carrito</a>
+                            <a class="boton" href="../carrito.html"><i class="fas fa-cart-plus"></i>Agregar al
+                                carrito</a>
                         </article>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <article>
-                            <img class="img-fluid" src="../imagenes/belleza/bio-oil.jpg"
-                                alt="Foto de Bio-Oil Aceite para el cuidado de la piel"
-                                title="Foto de Bio-Oil Aceite para el cuidado de la piel">
-                            <h2 class="h3"><a href="belleza-cuidado-piel/aceite-bio-oil.html">Aceite
+                            <a href="../categorias/belleza-cuidado-piel/crema-nutritiva-plus-50.html"><img
+                                    class="img-fluid" src="../imagenes/belleza/bio-oil.jpg"
+                                    alt="Foto de Bio-Oil Aceite para el cuidado de la piel"
+                                    title="Foto de Bio-Oil Aceite para el cuidado de la piel"></a>
+                            <h2 class="h3"><a
+                                    href="../categorias/belleza-cuidado-piel/crema-nutritiva-plus-50.html">Aceite
                                     Bio-Oil</a>
                             </h2>
                             <p>Bio-Oil Aceite para el cuidado de la piel es una combinación de extractos de plantas y
-                                vitaminas
-                                suspendidas en una base de aceite que mejoran la apariencia de sus cicatrices.</p>
+                                vitaminas suspendidas en una base de aceite que mejoran la apariencia de sus cicatrices.</p>
                             <span class="precio">$ 12.500 COP (Oferta)</span>
                             <span class="tachado">$ 15.000 COP (Normal)</span>
-                            <a class="boton" href="../carrito.html">Agregar al carrito</a>
+                            <a class="boton" href="../carrito.html"><i class="fas fa-cart-plus"></i>Agregar al
+                                carrito</a>
                         </article>
                     </div>
                 </div>
@@ -184,10 +215,9 @@
                             </select>
                             <input type="number" id="telefono" name="telefono" placeholder="No. de teléfono">
                             <textarea id="mensaje" name="mensaje" cols="30" rows="5" placeholder="Mensaje"></textarea>
-                            <label for="datos">¿Aceptas el tratamiento de tus datos personales?</label>
                             <input class="checkbox" type="checkbox" id="datos" name="datos">
+                            <label for="datos">¿Aceptas el tratamiento de tus datos personales?</label>
                             <div class="flex">
-                                <input class="boton" type="reset" value="Limpiar formulario">
                                 <input class="boton" type="submit" value="Enviar">
                             </div>
                         </form>
